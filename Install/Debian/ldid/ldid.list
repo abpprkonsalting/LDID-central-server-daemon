@@ -1,0 +1,14 @@
+%product LDID
+%copyright 2012 by Armando Banos <armando.banos@cneuro.edu.cu>
+%vendor DEVEL
+%description Servicio de resolucion de direcciones IPs dinamicas
+%version 0.1
+%readme README
+%license LICENCE
+%requires libc6
+%postinstall update-rc.d ldid defaults
+%preremove start-stop-daemon --stop --name ldid
+%postremove update-rc.d -f ldid remove
+
+c 755 root root /usr/sbin/ldid ldid
+c 755 root root /etc/init.d/ldid script_inicio
