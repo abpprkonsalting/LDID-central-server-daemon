@@ -1,6 +1,6 @@
-Install/*
-Code/autom4te.cache/*
-Code/autogen.sh
-Code/depcomp
-Code/install-sh
-Code/missing
+Install/* linguist-vendored
+Code/autom4te.cache/* linguist-vendored
+Code/autogen.sh linguist-vendored
+Code/depcomp linguist-vendored
+Code/install-sh linguist-vendored
+Code/missing linguist-vendored
